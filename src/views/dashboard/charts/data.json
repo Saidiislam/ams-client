@@ -1,0 +1,54 @@
+[
+    {
+      "id": "Check In",
+      "color": "hsl(325, 70%, 50%)",
+      "data": [
+        {
+          "x": "Sunday",
+          "y": 9.00
+        },
+        {
+          "x": "Monday",
+          "y": 9.30
+        },
+        {
+          "x": "Tuesday",
+          "y": 10.00
+        },
+        {
+          "x": "Wednesday",
+          "y": 10.30
+        },
+        {
+          "x": "Thursday",
+          "y": 12.00
+        }
+      ]
+    },
+    {
+      "id": "Check Out",
+      "color": "hsl(337, 70%, 50%)",
+      "data": [
+        {
+          "x": "Sunday",
+          "y": 17.00
+        },
+        {
+          "x": "Monday",
+          "y": 17.50
+        },
+        {
+          "x": "Tuesday",
+          "y": 16.50
+        },
+        {
+          "x": "Wednesday",
+          "y": 18.30
+        },
+        {
+          "x": "Thursday",
+          "y": 14.20
+        }
+      ]
+    }
+]
