@@ -49,7 +49,7 @@ const Hero = () => {
   return (
     <div>
       <Navbar/>
-      <AppContainer style={{position:"absolute", left: "46vw", top: "35%"}}>
+      <AppContainer style={{position:"absolute", left: "50%", top: "35%", transform:'translate(-40%, 0%)'}}>
         <div>
           <CButton className='Buttoned' style={{background:"#1f8cff", border:"2px solid #1f8cff", padding:"1.5rem", fontWeight:"bold", fontSize:"1.2rem"}} shape="rounded-pill" type='submit' href='#/login'>Get Started</CButton>
         </div>

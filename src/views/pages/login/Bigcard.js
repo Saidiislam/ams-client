@@ -5,12 +5,15 @@ import {
   CButton,
   CButtonGroup,
   CCard,
+  CCarousel,
+  CCarouselItem,
   CCardBody,
   CCardFooter,
   CCardHeader,
   CCol,
   CContainer,
   CProgress,
+  CImage,
   CRow,
   CTable,
   CTableBody,
@@ -55,6 +58,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBolt, faBoltLightning, faBrain, faCheck, faWrench } from '@fortawesome/free-solid-svg-icons'
 
+import Bigtwo from './img/bigt.png'
 import Bigwall from './img/wall2.jpg'
 import Fade from 'react-reveal/Fade'
 
@@ -172,8 +176,16 @@ const Bigcard = () => {
                   lg={{ span: 6, offset: 0 }}
                   style={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}
                 >
-                  <CCard style={{ width: '40rem', padding: '0', backgroundColor: 'transparent' }}>
-                    <img style={{ borderRadius: '10px', width: '40rem' }} src={Bigwall} alt="" />
+                  <CCard style={{ width: '60rem', padding: '0', backgroundColor: 'transparent' }}>
+                    {/* <img style={{ borderRadius: '10px', width: '40rem' }} src={Bigwall} alt="" /> */}
+                    <CCarousel controls transition="crossfade">
+                      <CCarouselItem>
+                        <img style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%', }} src={Bigwall} alt="slide 1" />
+                      </CCarouselItem>
+                      <CCarouselItem>
+                        <img  style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%', }} src={Bigtwo} alt="slide 2" />
+                      </CCarouselItem>
+                    </CCarousel>
                   </CCard>
                 </CCol>
               </CRow>
