@@ -61,16 +61,19 @@ import { faBolt, faBoltLightning, faBrain, faCheck, faWrench } from '@fortawesom
 import Bigtwo from './img/bigt.png'
 import Bigwall from './img/wall2.jpg'
 import Fade from 'react-reveal/Fade'
+import { Spline } from '@splinetool/react-spline'
 
 const Bigcard = () => {
   return (
-    <div style={{ width: '100vw', height: '100vh', background: '#76A6E0' }}>
+    <>
+    <Spline style={{position:'absolute'}} scene="https://draft.spline.design/lrhAB4soqTNZothw/scene.spline"/>
+    <div style={{ width: '100vw', height: '100vh', background: '#76A6E0', position: '' }}>
       <Fade bottom>
         <div
           className="row justify-content-md-center"
           style={{ width: '70vw', margin: 'auto', padding: '5rem 0' }}
         >
-          <CContainer>
+          <CContainer style={{ position: 'absolute' }}>
             <div className="">
               <CRow>
                 <CCol
@@ -96,7 +99,7 @@ const Bigcard = () => {
                           fontWeight: '700',
                           backgroundColor: 'transparent',
                           border: '0px',
-                          paddingBottom: '0px',
+                          paddingBottom: '0px'
                         }}
                       >
                         <div className="d-flex col">
@@ -122,7 +125,7 @@ const Bigcard = () => {
                           fontSize: '1.2rem',
                           fontWeight: '700',
                           backgroundColor: 'transparent',
-                          border: '0px',
+                          border: '0px'
                         }}
                       >
                         <div className="d-flex col">
@@ -148,7 +151,7 @@ const Bigcard = () => {
                           fontSize: '1.2rem',
                           fontWeight: '700',
                           backgroundColor: 'transparent',
-                          border: '0px',
+                          border: '0px'
                         }}
                       >
                         <div className="d-flex col">
@@ -180,10 +183,10 @@ const Bigcard = () => {
                     {/* <img style={{ borderRadius: '10px', width: '40rem' }} src={Bigwall} alt="" /> */}
                     <CCarousel controls transition="crossfade">
                       <CCarouselItem>
-                        <img style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%', }} src={Bigwall} alt="slide 1" />
+                        <img style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%' }} src={Bigwall} alt="slide 1" />
                       </CCarouselItem>
                       <CCarouselItem>
-                        <img  style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%', }} src={Bigtwo} alt="slide 2" />
+                        <img style={{ borderRadius: '10px', maxWidth: '100%', maxHeight: '100%' }} src={Bigtwo} alt="slide 2" />
                       </CCarouselItem>
                     </CCarousel>
                   </CCard>
@@ -193,7 +196,7 @@ const Bigcard = () => {
           </CContainer>
         </div>
       </Fade>
-    </div>
+    </div></>
   )
 }
 

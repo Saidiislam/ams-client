@@ -55,8 +55,8 @@ const Hero = () => {
         </div>
       </AppContainer>
       <div style={{position:"absolute", zIndex:"-2000"}}>
-        <Spline scene="https://draft.spline.design/PxyhUgpENILAjw60/scene.spline"/>
-
+        {/* <Spline scene="https://draft.spline.design/PxyhUgpENILAjw60/scene.spline"/> */}
+        <Spline scene="https://draft.spline.design/AGUV07rpFDGD4v83/scene.spline"/>
         <div style={{position:"relative", width:"auto"}}>
           <Bigcard />
         </div>
