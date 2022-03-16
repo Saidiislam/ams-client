@@ -29,7 +29,7 @@ const Navbar = () => {
                             </CContainer>
                         </CNavbarBrand>
                         <CForm className="d-flex">
-                        <CButton color="primary" shape="rounded-pill" type="submit" variant="outline" href='#/login'>
+                        <CButton color="primary" style={{border:'2px solid wheat', color:'wheat'}} shape="rounded-pill" type="submit" variant="outline" href='#/login'>
                             Sign Up!
                         </CButton>
                         </CForm>
